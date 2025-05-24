@@ -3,6 +3,9 @@
 module.exports = {
     output: 'export',
     distDir: 'dist',
+    images: {
+        unoptimized: true
+    },
     webpack(config, { isServer }) {
         if (isServer) {
             // 对于 SSR 阶段，排除一些模块
