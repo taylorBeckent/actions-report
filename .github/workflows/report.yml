@@ -1,3 +1,5 @@
+name: 打包Nextjs项目
+
 on: push
 
 jobs:
@@ -19,8 +21,13 @@ jobs:
       - name: 读取仓库内容
         uses: actions/checkout@v4
 
-      - name: 安装依赖
-        run: npm install
+      - name: 安装依赖 和 项目打包
+        run: ｜
+          npm install
+          npm run build
 
-      - name: 项目打包
-        run: npm run build
+      - name: 项目部署
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
