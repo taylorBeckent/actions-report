@@ -1,0 +1,48 @@
+.message-global-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.message-container {
+    padding: 10px 16px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    animation: messageSlideDown 0.3s ease;
+}
+
+@keyframes messageSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message-content {
+    margin-left: 8px;
+}
+
+.message-container.info {
+    border-left: 4px solid #1890ff;
+}
+
+.message-container.success {
+    border-left: 4px solid #52c41a;
+}
+
+.message-container.warning {
+    border-left: 4px solid #faad14;
+}
+
+.message-container.error {
+    border-left: 4px solid #f5222d;
+}

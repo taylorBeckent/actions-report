@@ -1,0 +1,312 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+
+/* Status Bar */
+.statusBar {
+    padding: 14px 24px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.time {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Search Section */
+.searchSection {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 16px 8px 12px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+
+.searchContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.searchLocation {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+
+.searchDetails {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #828282;
+}
+
+.dot {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.searchResults {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    color: #000000;
+}
+
+.filterSort {
+    display: flex;
+    gap: 8px;
+}
+
+.filterButton,
+.sortButton {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 8px 6px 10px;
+    border: 1px solid #E6E6E6;
+    border-radius: 6px;
+    background: none;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.chevron {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* Map Section */
+.mapSection {
+    flex: 1;
+    background-color: #FAFCFF;
+    position: relative;
+}
+
+.mapPlaceholder {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.priceChips {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 8px;
+}
+
+.priceChip {
+    padding: 8px 12px;
+    background-color: #FCFEFF;
+    border-radius: 24px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #1B2228;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.priceChip.selected {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* Listings Section */
+.listingsSection {
+    background-color: #FFFFFF;
+    border-radius: 24px 24px 0 0;
+    padding: 8px 16px 0;
+}
+
+.handle {
+    width: 32px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    margin: 0 auto 16px;
+}
+
+.listings {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 16px;
+}
+
+.listingCard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.imageCarousel {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 4px;
+}
+
+.pagination .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination .dot.active {
+    background-color: #FFFFFF;
+}
+
+.listingInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.infoText {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.locationName {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    margin: 0;
+}
+
+.details {
+    display: flex;
+    gap: 16px;
+}
+
+.rating,
+.distance {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.priceAction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.amount {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.night {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.selectButton {
+    padding: 0 16px;
+    height: 32px;
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Tab Bar */
+.tabBar {
+    border-top: 1px solid #E6E6E6;
+    background-color: #FFFFFF;
+    backdrop-filter: blur(20px);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 8px;
+}
+
+.tab {
+    padding: 12px 26px 8px;
+    cursor: pointer;
+}
+
+.tab.inactive {
+    opacity: 0.3;
+}
+
+.tripsIcon {
+    width: 24px;
+    height: 24px;
+    border: 1.8px solid #000000;
+    border-radius: 1.8px;
+}
+
+.homeIndicator {
+    width: 134px;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 100px;
+    margin: 8px auto;
+}

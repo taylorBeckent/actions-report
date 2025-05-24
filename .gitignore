@@ -1,0 +1,38 @@
+## dependencies
+**/node_modules
+node_modules
+node_modules.zip
+
+# production
+dist
+/dist
+/.vscode
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+
+/coverage
+.idea
+yarn.lock
+package-lock.json
+*bak
+.vscode
+
+# visual studio code
+.history
+*.log
+functions/*
+.temp/**
+
+# next
+.next
+.next-production
+
+# screenshot
+screenshot
+.firebase
+.eslintcache
+
+build

@@ -1,5 +1,5 @@
 on: push
-
+';.,'
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -10,3 +10,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: node --version
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm --version
+      - run: npm install
+      - run: nom run build
