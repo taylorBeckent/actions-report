@@ -1,6 +1,7 @@
 // next.config.js
 // /// next.config.js
 module.exports = {
+    output: 'export',
     distDir: 'dist',
     webpack(config, { isServer }) {
         if (isServer) {

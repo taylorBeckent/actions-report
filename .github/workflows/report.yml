@@ -26,8 +26,12 @@ jobs:
           npm install
           npm run build
 
+      - name: 验证构建结果
+        run: ls -lah dist
+
       - name: 项目部署
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
+          clear: true
