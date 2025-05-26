@@ -37,8 +37,8 @@ jobs:
         with:
           context: . # 明确指定构建上下文
           push: true
-          tags:
-            taylorbeckent/github-actions:latest |
+          tags: |
+            taylorbeckent/github-actions:latest
             taylorbeckent/github-actions:${{ github.sha }}
 
 #      - name: 安装依赖 和 项目打包
