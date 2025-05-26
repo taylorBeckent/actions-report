@@ -1,0 +1,79 @@
+{
+  "id": "4282346",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "122690",
+      "name": "Category",
+      "font_class": "category",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    },
+    {
+      "icon_id": "122718",
+      "name": "Viewlist",
+      "font_class": "viewlist",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "1164839",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "4553723",
+      "name": "发起聊天",
+      "font_class": "faqiliaotian",
+      "unicode": "e7da",
+      "unicode_decimal": 59354
+    },
+    {
+      "icon_id": "6152360",
+      "name": "shezhi",
+      "font_class": "shezhi",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "30818375",
+      "name": "wenjian",
+      "font_class": "wenjian",
+      "unicode": "e7a2",
+      "unicode_decimal": 59298
+    },
+    {
+      "icon_id": "26701",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "77156",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6033270",
+      "name": "icon_shezhi ",
+      "font_class": "icon_shezhi",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "21825735",
+      "name": "Icon_wenjian",
+      "font_class": "Icon_wenjian",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}
