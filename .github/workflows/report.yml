@@ -26,6 +26,9 @@ jobs:
       - name: 读取仓库内容
         uses: actions/checkout@v4
 
+      - name: 检出代码
+        uses: ls -la # 验证构建上下文
+
       - name: 登陆DockerHub
         uses: docker/login-action@v3
         with:
