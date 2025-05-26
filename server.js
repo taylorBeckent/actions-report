@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
@@ -18,7 +20,7 @@ nextApp.prepare().then(() => {
     // Session 存储用户关键信息
     app.use(
         session({
-            secret: process.env.SECRET_KEY, //.session密钥 secret_key
+            secret: process.env.SECRET_KEY || 'AuthorityToken', //.session密钥 secret_key
             resave: false,
             saveUninitialized: false,
             cookie: {
@@ -49,7 +51,15 @@ nextApp.prepare().then(() => {
 
     // 启动服务器
     const port = process.env.PORT || 3000;
-    app.listen(port, () => {
+    app.listen(port, (err) => {
+        if(err) {
+            console.log('err',err)
+            throw err;
+        }
         console.log(`> Ready on http://localhost:${port}`);
     });
-});
+})
+    .catch((error)=>{
+        console.error('Next.js 编译失败:', err);
+        process.exit(1); // 明确退出进程
+    })

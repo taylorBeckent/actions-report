@@ -1,7 +1,7 @@
 // next.config.js
 // /// next.config.js
 module.exports = {
-    output: 'export',
+    // output: 'export',
     distDir: 'dist',
     images: {
         unoptimized: true
