@@ -20,7 +20,7 @@ jobs:
       contents: write
       pages: write
       id-token: write
-      package: write
+      packages: write
 
     steps:
       - name: 读取仓库内容
