@@ -20,13 +20,14 @@ jobs:
       contents: write
       pages: write
       id-token: write
+      package: write
 
     steps:
       - name: 读取仓库内容
         uses: actions/checkout@v4
 
       - name: 登陆DockerHub
-        uses: docker/login-action@v4
+        uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME}}
           password: ${{ secrets.DOCKER_HUB_TOKEN}}
@@ -34,8 +35,11 @@ jobs:
       - name: 构建并推送到Docker Hub
         uses: docker/build-push-action@v5
         with:
+          context: . # 明确指定构建上下文
           push: true
-          tags: taylorbeckent/github-actions:latest
+          tags:
+            taylorbeckent/github-actions:latest |
+            taylorbeckent/github-actions:${{ github.sha }}
 
 #      - name: 安装依赖 和 项目打包
 #        run: |
